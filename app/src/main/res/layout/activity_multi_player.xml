@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".multi_playerActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/inputNums"
+        android:paddingTop="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the number"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/Messagems"
+        android:layout_marginTop="25dp"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputNums"
+        android:layout_alignParentStart="true"
+        android:hint="No attempt yet"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/buttontwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="178dp"
+        android:layout_alignParentLeft="true"
+        android:text="GUESS NOW!!!"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/bullcounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="Bull: 0"/>
+        <TextView
+            android:id="@+id/cowcounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cow: 0"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

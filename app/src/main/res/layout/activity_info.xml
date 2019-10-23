@@ -6,4 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".info">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        tools:ignore="MissingConstraints"
+        android:text="The first one to reveal the other's secret number wins the game.
+                                Secret number: 4271
+                      Opponent's try: 1234
+                                              Answer: 1 bull and 2 cows. (The bull is '2', the cows are '4' and '1'.)
+The game may also be played by two teams of 2–3 players, with the team members discussing their strategy before selecting a move."
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

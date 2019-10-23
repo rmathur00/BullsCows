@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".info"></activity>
-        <activity android:name=".multiplayer_screen" />
         <activity android:name=".secret_num" />
         <activity android:name=".multi_playerActivity" />
         <activity android:name=".single_playerActivity" />
